@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: attendance-app
+    env: python
+    buildCommand: ./build.sh
+    startCommand: ./start.sh

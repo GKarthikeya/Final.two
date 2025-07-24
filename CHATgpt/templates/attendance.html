@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Attendance</title></head>
+<body>
+  <h2>Your Attendance</h2>
+  <table border="1">
+    <tr><th>Subject</th><th>Attended</th><th>Total</th><th>Percentage</th></tr>
+    {% for subject, attended, total, percentage in data %}
+    <tr>
+      <td>{{ subject }}</td>
+      <td>{{ attended }}</td>
+      <td>{{ total }}</td>
+      <td>{{ percentage }}%</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
